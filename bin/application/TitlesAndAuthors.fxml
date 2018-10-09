@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JustListController">
+   <children>
+      <HBox layoutX="200.0" prefHeight="60.0" prefWidth="600.0" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #1A5276; -fx-background-radius: 0;" text="BACK" textFill="#f6f1f1" />
+            <Label prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #3498DB;" text="                              BOOKS AND AUTHORS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TabPane layoutX="-1.0" layoutY="61.0" prefHeight="340.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="BOOKS">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="lof" layoutX="2.0" layoutY="33.0" prefHeight="276.0" prefWidth="600.0" />
+                        <Label layoutY="1.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: RED;" text="                                                                                    BOOKS" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="AUTHORS">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="376.0">
+                     <children>
+                        <ListView fx:id="loa" layoutY="36.0" prefHeight="274.0" prefWidth="600.0" />
+                        <Label layoutX="2.0" layoutY="2.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: orange;" text="                                                                                     AUTHORS" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

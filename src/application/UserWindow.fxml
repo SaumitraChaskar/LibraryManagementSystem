@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserWindowController">
+   <children>
+      <HBox layoutX="269.0" prefHeight="60.0" prefWidth="600.0" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="92.0" style="-fx-background-color: #1A5276;" text="BACK" textFill="#efeff5" />
+            <Label prefHeight="60.0" prefWidth="701.0" style="-fx-background-color: #3498DB;" text="        VISITOR'S WINDOW" textAlignment="CENTER">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutY="60.0" prefHeight="340.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="issue" mnemonicParsing="false" onAction="#IssueBook" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="ISSUE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bookreturn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ReturnBook" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="RETURN">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="payfine" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#PayFine" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="PAY FINE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="63.0" text="  Visitor ID">
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="visitorid" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="78.0" style="-fx-border-color: #3498DB;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

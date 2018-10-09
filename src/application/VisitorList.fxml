@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisitorListController">
+   <children>
+      <HBox layoutX="214.0" layoutY="94.0" prefHeight="128.0" prefWidth="800.0" AnchorPane.bottomAnchor="472.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #1A5276;" text="BACK" textFill="#eee9e9" />
+            <Label prefHeight="61.0" prefWidth="700.0" style="-fx-background-color: #3498DB;" text="                  VISITOR DATA">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="3.0" layoutY="127.0" prefHeight="471.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="visitortable" prefHeight="234.0" prefWidth="746.0">
+               <columns>
+                  <TableColumn fx:id="visitorid" prefWidth="75.5999755859375" text="VISITOR ID" />
+                  <TableColumn fx:id="book1" prefWidth="89.20001220703125" text="BOOK1" />
+                  <TableColumn fx:id="book2" prefWidth="82.0" text="BOOK2" />
+                  <TableColumn fx:id="book3" prefWidth="97.59996032714844" text="BOOK3" />
+                  <TableColumn fx:id="book1trturn" prefWidth="117.199951171875" text="RETURN1" />
+                  <TableColumn fx:id="book2return" prefWidth="121.5999755859375" text="RETURN2" />
+                  <TableColumn fx:id="book3return" prefWidth="105.5999755859375" text="RETURN3" />
+                  <TableColumn fx:id="fine" prefWidth="57.199951171875" text="FINE" />
+               </columns>
+            </TableView>
+            <VBox prefHeight="471.0" prefWidth="60.0">
+               <children>
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#AddVisitor" prefHeight="74.0" prefWidth="41.0" style="-fx-background-radius: 0;" text="ADD">
+                     <VBox.margin>
+                        <Insets left="5.0" top="50.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

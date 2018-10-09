@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminChoiceController">
+   <children>
+      <Label layoutX="-1.0" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #3498DB;" text="      ADMINISTRATOR WINDOW" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutY="60.0" prefHeight="339.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="addV" mnemonicParsing="false" onAction="#addVisitorClicked" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="ADD VISITOR">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="removeV" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#removeVistorClicked" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="REMOVE VISITOR">
+               <VBox.margin>
+                  <Insets left="5.0" top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="addB" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#addBookClicked" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="ADD BOOK">
+               <VBox.margin>
+                  <Insets left="5.0" top="2.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="removeB" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#removeBookClicked" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="REMOVE BOOK">
+               <VBox.margin>
+                  <Insets left="5.0" top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="mailV" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="MAIL VISITOR">
+               <VBox.margin>
+                  <Insets left="5.0" top="2.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="-1.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="63.0" style="-fx-background-color: #1A5276; -fx-background-radius: 0;" text="BACK" textFill="#f6f1f1" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminWindowController">
+   <children>
+      <HBox layoutX="-2.0" prefHeight="60.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="92.0" style="-fx-background-color: #1A5276;" text="BACK" textFill="#efeff5" />
+            <Label prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #3498DB;" text="   ADMINISTRATOR'S LOGIN">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="68.0" layoutY="100.0" prefHeight="200.0" prefWidth="248.0">
+         <children>
+            <Label fx:id="adminlabel" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #3498DB;" text="              ADMIN ID :">
+               <VBox.margin>
+                  <Insets left="20.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="passwordlabel" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #3498DB;" text="            PASSWORD">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="266.0" layoutY="127.0" prefHeight="114.0" prefWidth="194.0">
+         <children>
+            <TextField fx:id="adminid" promptText="Admin ID">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="adminpassword" promptText="Password">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <HBox layoutX="183.0" layoutY="258.0" prefHeight="74.0" prefWidth="266.0">
+         <children>
+            <Button fx:id="login" mnemonicParsing="false" onAction="#LoginButtonClicked" prefHeight="55.0" prefWidth="78.0" style="-fx-background-color: #3498DB;" text="LOGIN">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="reset" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onAction="#ResetButtonClicked" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: #3498DB;" text="RESET">
+               <HBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
